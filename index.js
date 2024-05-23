@@ -51,9 +51,6 @@ const logState = (label, store) => {
   console.log(`${label}:`, store.getState());
 };
 
-// Create a store with the counter reducer
-//const store = createStore(counterReducer);
-
 // Scenario 1: Initial State Verification
 logState('Initial State', store); // Expected output: { count: 0 }
 
