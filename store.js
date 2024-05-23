@@ -40,9 +40,8 @@ function createStore(reducer) {
   // Initialize the store with the tallyReducer
   const store = createStore(tallyReducer);
   
-  // Subscribe to the store and log the state changes to the console
-  store.subscribe(() => console.log(store.getState()));
-  
-  // Exporting store for testing purposes
-  module.exports = { store };
+  // Exporting store for testing and use in other modules
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { store };
+  }
   
