@@ -43,5 +43,8 @@ function createStore(reducer) {
   // Exporting store for testing and use in other modules
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = { store };
+} else {
+    // Expose store globally for app.js
+    window.store = store;
   }
   
