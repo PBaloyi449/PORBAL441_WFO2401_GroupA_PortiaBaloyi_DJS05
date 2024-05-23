@@ -4,33 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tally App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .counter {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    button {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-      margin: 0.5rem;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="counter" id="counter">0</div>
-  <button id="addBtn">Add</button>
-  <button id="subtractBtn">Subtract</button>
-  <button id="resetBtn">Reset</button>
+  <div class="container">
+    <h1>Tally Counter</h1>
+    <div class="counter" id="counter">0</div>
+    <div class="buttons">
+      <button id="addBtn" class="btn">Add</button>
+      <button id="subtractBtn" class="btn">Subtract</button>
+      <button id="resetBtn" class="btn reset">Reset</button>
+    </div>
+  </div>
 
   <script src="store.js"></script>
   <script src="app.js"></script>
