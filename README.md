@@ -8,7 +8,7 @@ This project implements a Redux-inspired store to manage the state of a tally co
 
 2. **Copy the code into a file**: Create files named `store.js` and app.js, copy the provided JavaScript codes into this files.
 
-3. **Run the code using Node.js or the UI**: Open a terminal or command prompt, navigate to the directory where `store.js` is located, and run the following command:
+3. **Run the code using Node.js or the UI**: You can run it using the UI and you can also open a terminal or command prompt, navigate to the directory where `store.js` is located, and run the following command:
    ```sh
    node store.js
-   or run it using the UI
+  
